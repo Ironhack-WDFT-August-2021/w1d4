@@ -28,6 +28,7 @@ body {
 .container {
 	height: 100vh;
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	--stagger-delay: 100ms;
 }
@@ -62,4 +63,15 @@ body {
 		opacity: 1;
 		transform: scale(1);
 	}	
+}
+
+/* @media (min-width: 320px) and (max-width: 480px) - this specifies a range */
+@media (max-width: 480px) {
+	.container {
+	 	/* color: red */
+		flex-direction: column;
+	}
+	.box {
+		width: 80vw;
+	}
 }
